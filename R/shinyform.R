@@ -187,7 +187,7 @@ formUI <- function(formInfo) {
     titleElement <- h2(formInfo$name)
   }
   
-  responseText <- "Thank you, your response was submitted successfully."
+  responseText <- "Obrigado, sua resposta foi enviada com sucesso."
   if (!is.null(formInfo$responseText)) {
     responseText <- formInfo$responseText
   }
@@ -253,7 +253,7 @@ formUI <- function(formInfo) {
         id = ns("thankyou_msg"),
         class = "thankyou_msg",
         strong(responseText), br(),
-        actionLink(ns("submit_another"), "Submit another response")
+        actionLink(ns("submit_another"), "Enviar outra resposta")
       )
     ),
     shinyjs::hidden(
@@ -279,8 +279,8 @@ formUI <- function(formInfo) {
     )),
     
     div(class = "created-by",
-        "Created with",
-        a(href = "https://github.com/daattali/shinyforms", "shinyforms")
+        "Criado com Shiny e Shinyforms. Outras informações",
+        a(href = "https://github.com/daattali/shinyforms", "aqui")
     )
   )
 }
