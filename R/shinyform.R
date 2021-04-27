@@ -234,7 +234,7 @@ formUI <- function(formInfo) {
           }
         )
       ),
-      actionButton(ns("submit"), "Submit", class = "btn-primary"),
+      actionButton(ns("submit"), "Enviar", class = "btn-primary"),
       if (!is.null(formInfo$reset) && formInfo$reset) {
         actionButton(ns("reset"), "Reset")
       },
