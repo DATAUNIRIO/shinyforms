@@ -214,7 +214,7 @@ formUI <- function(formInfo) {
             } else if (question$type == "numeric") {
               input <- numericInput(ns(question$id), NULL, 0)
             } else if (question$type == "date") {
-              input <- dateInput(ns(question$id), NULL, "2023-01-31", format = "dd/mm/yy")
+              input <- dateInput(ns(question$id), NULL, "2023-01-31", format = "dd/mm/yyyy")
             } else if (question$type == "checkbox") {
               input <- checkboxInput(ns(question$id), label, FALSE)
             }
