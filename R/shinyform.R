@@ -279,8 +279,11 @@ formUI <- function(formInfo) {
     )),
     
     div(class = "created-by",
-        "Criado com Shiny e Shinyforms. Outras informações",
-        a(href = "https://github.com/daattali/shinyforms", "aqui")
+        "Criado com Shiny e com o ",
+        a(href = "https://github.com/daattali/shinyforms", "Shinyforms"),
+        br(),
+        "Para outros aplicativos, clique ",
+        a(href = "https://steven.metodosquantitativos.com/", "aqui"),
     )
   )
 }
